@@ -1,10 +1,15 @@
-
+import { useSelector } from 'react-redux';
+import styled from 'styled-components';
+import Header from './components/header';
+import { useUserIP } from './hooks/useUserIp';
 function App() {
+  // Get current user IP
+  useUserIP();
+  const ip = useSelector(state => state.ip);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        Hello word
-      </header>
+    <div>
+      <Header/>
     </div>
   );
 }

@@ -1,16 +1,19 @@
-import { useSelector } from 'react-redux';
 import styled from 'styled-components';
 import Header from './components/header';
+import Map from './components/map'
 import { useUserIP } from './hooks/useUserIp';
 function App() {
   // Get current user IP
   useUserIP();
-  const ip = useSelector(state => state.ip);
-
+  const StyledDiv = styled.div`
+    display:flex;
+    flex-direction: column;
+  ` 
   return (
-    <div>
+    <StyledDiv>
       <Header/>
-    </div>
+      <Map/>
+    </StyledDiv>
   );
 }
 

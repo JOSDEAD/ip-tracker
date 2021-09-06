@@ -6,10 +6,9 @@ import store from './state/store'
 import { createGlobalStyle } from 'styled-components';
 
 const StyledFontContainer = createGlobalStyle`
-body {
-  font-family: Rubik;
-  background-color:gray;
-}
+  body {
+    font-family: Rubik;
+  }
 `
 
 ReactDOM.render(

@@ -8,7 +8,7 @@ const getCurrentUserIp = () => {
 }
 
 const getCustomUserIp = async (customIp) => {
-    const result = await axios.get(`${API}?apiKey=${KEY}&ipAddress${customIp}`)
+    const result = await axios.get(`${API}?apiKey=${KEY}&ipAddress=${customIp}`)
     return result
 }
 

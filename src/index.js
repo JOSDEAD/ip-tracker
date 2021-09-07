@@ -8,6 +8,7 @@ import { createGlobalStyle } from 'styled-components';
 const StyledFontContainer = createGlobalStyle`
   body {
     font-family: Rubik;
+    margin:0;
   }
 `
 

@@ -4,17 +4,19 @@ import styled from "styled-components";
 import { COLORS } from "../../constants/colors";
 import { setCustomIp } from '../../state/actions/ipInfoActions'
 const StyledForm = styled.form`
-  width: 40%;
+  width: calc(100% - 3rem);
+  max-width:36rem;
+  margin-inline: auto;
   display: flex;
   justify-content: center;
-  margin-bottom: 5rem;
-  margin-top: 0.5rem;
+  margin-bottom:13rem;
 `;
 
 const StyledInput = styled.input`
   flex: auto;
   border: none;
-  padding: 1rem 1rem 1rem 1.5rem;
+  padding-block: 0.875rem;
+  padding-inline:1.5rem;
   font-size: 1.5rem;
   border-radius: 0.6rem 0 0 0.6rem;
   outline: none;
@@ -25,8 +27,12 @@ const StyledButton = styled.button`
   color: white;
   font-size: 1.5rem;
   border-radius: 0 0.6rem 0.6rem 0;
-  background-color: ${(props) => props.color};
+  background-color: black;
   padding: 1rem;
+
+  :hover{
+    background-color: ${(props) => props.color};
+  }
 `;
 
 const Form = () => {

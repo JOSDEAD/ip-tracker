@@ -3,8 +3,7 @@ import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import { useSelector } from "react-redux";
 import L from 'leaflet';
 const StyledMap = styled.div`
-  height: 68vh;
-  background-color: white;
+  height: 64%;
   position: relative;
   z-index: 0;
 `;

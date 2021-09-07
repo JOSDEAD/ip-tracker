@@ -8,6 +8,7 @@ function App() {
   const StyledDiv = styled.div`
     display:flex;
     flex-direction: column;
+    height: 100vh;
   ` 
   return (
     <StyledDiv>

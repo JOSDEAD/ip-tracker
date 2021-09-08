@@ -7,10 +7,6 @@ const Background = styled.header`
   background-size: cover;
   padding-top: 1.5rem;
   height: 18rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   position:relative;  
   text-align:center;
   @media (min-width: 768px) {
@@ -23,10 +19,9 @@ const Tittle = styled.h1`
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 500;
+  margin:0;
   margin-bottom:1.75rem;
   @media (min-width: 768px) {
-    padding-top: 2rem;
-    height: 17rem;
     font-size: 1.875rem;
         line-height: 2.25rem;
   }

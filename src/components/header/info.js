@@ -8,9 +8,9 @@ const StyledContainer = styled.div`
   left: 0px;
   right: 0px;
   margin-inline: auto;
-  padding: 1.8rem;
+  padding: 1.5rem;
   text-align: center;
-  width: calc(100% - 6.5rem);
+  width: calc(100% - 6rem);
   max-width: 69.4rem;
   background-color: white;
   border-radius: 0.6rem;
@@ -46,6 +46,7 @@ const StyledP = styled.p`
   color: gray;
   font-weight: 700;
   text-transform: uppercase;
+  margin:0;
   margin-bottom: 0.5rem;
   font-size: 0.625rem;
   line-height: 0.75rem;

@@ -6,6 +6,9 @@ const StyledMap = styled.div`
   height: 64%;
   position: relative;
   z-index: 0;
+  @media (min-width: 768px) {
+    height: 68%;
+  }
 `;
 const styledMap = { height: "100%" };
 
@@ -31,6 +34,7 @@ const Map = () => {
         zoom={16}
         scrollWheelZoom={false}
         style={styledMap}
+        zoomControl={false}
       >
         <MyComponent center={position} zoom={16}/>  
         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />

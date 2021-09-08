@@ -9,16 +9,15 @@ const StyledForm = styled.form`
   margin-inline: auto;
   display: flex;
   justify-content: center;
-  margin-bottom:13rem;
 `;
 
 const StyledInput = styled.input`
-  flex: auto;
+  flex: 1 1 auto;
   border: none;
   padding-block: 0.875rem;
   padding-inline:1.5rem;
-  font-size: 1.5rem;
-  border-radius: 0.6rem 0 0 0.6rem;
+  font-size: 1.125rem;;
+  border-radius: 0.75rem 0 0 0.75rem;
   outline: none;
 `;
 const StyledButton = styled.button`
@@ -28,7 +27,7 @@ const StyledButton = styled.button`
   font-size: 1.5rem;
   border-radius: 0 0.6rem 0.6rem 0;
   background-color: black;
-  padding: 1rem;
+  padding-inline: 1rem;
 
   :hover{
     background-color: ${(props) => props.color};
